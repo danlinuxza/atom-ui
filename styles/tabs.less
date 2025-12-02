@@ -4,6 +4,7 @@
 @tab-border: 1px solid @tab-border-color;
 @tab-max-width: 160px;
 @tab-min-width: 28px;
+@tab-height: 28px;
 
 .tab-bar {
   height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
@@ -95,7 +96,7 @@
   .tab.modified {
     &:not(:hover) .close-icon {
       right: 0;
-      top: @tab-height/2 - @modified-icon-width/2 + 1px;
+      top: (@tab-height / 2) - (@modified-icon-width / 2) + 1px;
       width: @modified-icon-width;
       height: @modified-icon-width;
       border-color: @tab-accent-color;
@@ -132,7 +133,7 @@
     background: @tab-accent-color;
     pointer-events: none;
     &:after {
-      top: @tab-height/2 + @tab-top-padding - 5px ;
+      top: ((@tab-height / 2) + @tab-top-padding) - 5px;
       width: 10px;
       height: 10px;
       margin: 0;
